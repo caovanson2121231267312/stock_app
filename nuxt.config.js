@@ -18,10 +18,10 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ['@/assets/index.scss'],
+    css: ['@/assets/index.scss','@fortawesome/fontawesome-svg-core/styles.css'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
+    plugins: ['~/plugins/fontawesome.js'],
 
     env: {
         app_name: process.env.APP_NAME || 'app stock',

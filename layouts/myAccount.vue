@@ -6,6 +6,13 @@
 
             <div class="mp-top">
                 <b-container fluid="md" class="bv-example-row max-header">
+
+                    <!-- <client-only placeholder="Loading..."> -->
+                        <template v-if="breadcrumbs">
+                            <v-breadcrumbs class="breadcrumbs-user mb-2" :items="breadcrumbs" large></v-breadcrumbs>
+                        </template>
+                    <!-- </client-only> -->
+
                     <v-row>
                         <v-col xs="" sm="" md="" lg="3" xl="3" style="max-width: 300px;">
                             <menu-bar />
@@ -30,6 +37,11 @@ export default {
     data() {
         return {
             title: 'app stock',
+        }
+    },
+    computed: {
+        breadcrumbs() {
+            return this.$store.getters[`breadcrumbs/list`]
         }
     },
 }
