@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^2.0.10",
-    "@nuxt/content": "^1.0.0",
+    "@nuxt/content": "^2.8.4",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/pwa": "^3.3.5",
